@@ -1,12 +1,69 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8">
-    <title>sputnik</title>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="wowbook-master/css/wow_book.css" type="text/css" />
+  <link rel="stylesheet" href="style/style.css" type="text/css" />
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="wowbook-master/wow_book.min.js"></script>
+  <script type="text/javascript" src="wowbook-master/pdf.combined.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('#wowbook__window').wowBook({
+        height: 500,
+        width: 600,
+        
+      });
+      $('#wowbook__window').css("display", "block");
+      var book = $.wowBook("#wowbook__window");
+      $("#zoom_in").click(function () { book.zoomIn() });
+      $("#zoom_out").click(function () { book.zoomOut() });
+    });
+  </script>
 </head>
-<body>
-    <div>
-        <img class="wowbook__photo" src="https://static-sl.insales.ru/images/products/1/36/130269220/44610642.jpg" />
+
+<body class="wowbook__container" style="background-color: gray">
+  <div class="wowbook__menu">
+    <div class="wowbook__button">
+      <img id="zoom_in" src="C:\Users\Masha_Sputnik9\Desktop\Арг\Slider\wowbook-master\images\icons\zoom__in.png">
+      <img id="zoom_out" src="C:\Users\Masha_Sputnik9\Desktop\Арг\Slider\wowbook-master\images\icons\zoom__out.png">
     </div>
+  </div>
+
+  <div id="wowbook__window">
+    <div>
+      <img class="wowbook__photo" src="https://static-sl.insales.ru/images/products/1/36/130269220/44610642.jpg" />
+    </div>
+    <div>
+      <img class="wowbook__photo" src="https://storage.piter.com/upload/sg/9785446106424/F/1.jpg" />
+    </div>
+    <div>
+      <img class="wowbook__photo" src="https://storage.piter.com/upload/sg/9785446106424/F/2.jpg" />
+    </div>
+    <div>
+      <img class="wowbook__photo" src="https://storage.piter.com/upload/sg/9785446106424/F/3.jpg" />
+    </div>
+    <div>
+      <img class="wowbook__photo" src="https://storage.piter.com/upload/sg/9785446106424/F/4.jpg" />
+    </div>
+    <div>
+      <img class="wowbook__photo" src="https://storage.piter.com/upload/sg/9785446106424/F/5.jpg" />
+    </div>
+    <div>
+      <img class="wowbook__photo" src="https://storage.piter.com/upload/sg/9785446106424/F/6.jpg" />
+    </div>
+    <div>
+      <img class="wowbook__photo" src="https://storage.piter.com/upload/sg/9785446106424/F/7.jpg" />
+    </div>
+  </div>
+ 
+
+
+
+
+
 </body>
+
 </html>
