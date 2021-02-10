@@ -15,23 +15,15 @@
         height: 500,
         width: 600,
         turnPageDuration: 300,
-        mouseWheel: "zoom"
+        mouseWheel: "zoom",
+        pageNumbers: false
       });
       $('#wowbook__window').css("display", "block");
-      var book = $.wowBook("#wowbook__window");
-      $("#zoom_in").click(function () { book.zoomIn() });
-      $("#zoom_out").click(function () { book.zoomOut() });
     });
   </script>
 </head>
 
 <body class="wowbook__container" style="background-color: gray">
-  <div class="wowbook__menu">
-    <div class="wowbook__button">
-      <img id="zoom_in" src="wowbook-master\images\icons\zoom__in.png">
-      <img id="zoom_out" src="wowbook-master\images\icons\zoom__out.png">
-    </div>
-  </div>
   <div id="wowbook__window">
     <div>
       <img class="wowbook__photo" src="https://static-sl.insales.ru/images/products/1/36/130269220/44610642.jpg" />

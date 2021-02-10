@@ -2,22 +2,8 @@
     width: 100%;
     height: 100%;
 }
-
-.wowbook__menu{
-    margin: auto;
-    margin-top: 10px;
-    
-}
-.wowbook__button{
-    text-align: center; 
-    margin: auto;
-    height: 30px;
-    width: 30px;
-    display: flex;
-}
-
 #wowbook__window{
-    margin: 0 auto; 
+    margin: 100px auto; 
     display: none;
-    margin-top: 10px;
+    
 }
