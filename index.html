@@ -18,8 +18,11 @@
         turnPageDuration: 300,
         mouseWheel: "zoom",
         pageNumbers: false,
-    });
-    $('#wowbook__window').css("display", "block");
+        controls: {
+          next: ".wowbook-right",
+          back: ".wowbook-left"
+      }});
+      $('#wowbook__window').css("display", "block");
     });
   </script>
 </head>
